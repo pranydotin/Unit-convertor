@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metric/Imperial Unit Conversion</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="mode">
+          <i class="fa-solid"></i>
+          <!-- <i class="fa-solid fa-moon" title="Dark Mode"></i> -->
+        </div>
+        <h1>Metric / Imperial Unit Conversion</h1>
+        <input type="text" class="unit" id="unit" name="unit" />
+        <button class="convert-btn" id="convert-btn">Convert</button>
+      </header>
+      <main class="main" id="main">
+        <div class="conversion-div" id="length">
+          <h2>Length (Meter/Feet)</h2>
+          <p class="conversion-value" id="length-conversion"></p>
+        </div>
+        <div class="conversion-div" id="volume">
+          <h2>Volume (Liters/Gallons)</h2>
+          <p class="conversion-value" id="volume-conversion"></p>
+        </div>
+        <div class="conversion-div" id="mass">
+          <h2>Mass (Kilograms/Pounds)</h2>
+          <p class="conversion-value" id="mass-conversion"></p>
+        </div>
+      </main>
+    </div>
+    <footer class="connect">
+      <h2>Connect:</h2>
+      <div class="socials">
+        <a href="https://twitter.com/pranydotin" target="_blank">
+          <i class="fa-brands fa-twitter" title="Connect in Twitter"></i>
+        </a>
+        <a href="https://github.com/thepran" target="_blank">
+          <i class="fa-brands fa-github" title="Open Github"></i>
+        </a>
+        <a href="https://codepen.io/thepran" target="_blank">
+          <i class="fa-brands fa-codepen" title="CodePen"></i>
+        </a>
+      </div>
+    </footer>
+
+    <div class="pre-loader">
+      <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <script
+      src="https://kit.fontawesome.com/7a31ca3e04.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
+    <script src="setTheme.js"></script>
+  </body>
+</html>
