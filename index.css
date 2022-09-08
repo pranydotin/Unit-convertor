@@ -33,7 +33,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background-color: var(--body-background);
-  transition: background 2s ease-in-out;
+  transition: background 0.5s ease-in-out;
   overflow-x: hidden;
   font-family: "Inter";
 }
@@ -124,7 +124,7 @@ body {
   font-size: 16px;
   color: #3d3d3d;
   cursor: pointer;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.5s ease-in-out;
 }
 .header .convert-btn:hover {
   background-color: #716b74;
@@ -140,7 +140,7 @@ body {
   background-color: var(--main-background);
   padding: 33px 25px;
   gap: 23px;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .main .conversion-div {
   width: 490px;
@@ -150,6 +150,7 @@ body {
   border-radius: 4.68077px 0px 0px 0px;
   text-align: center;
   padding: 31px 0;
+  transition: all 0.5s cubic-bezier(0.02, -1.68, 0.64, 2.36);
 }
 .main .conversion-div > h2 {
   font-family: "Inter";
