@@ -1,12 +1,19 @@
 const theme = document.querySelector(".mode");
 const themeIcon = document.querySelector(".mode>i");
-let themeMode = "Light Mode"; //default
 
+// setting theme based on system default theme
+let themeMode = window.matchMedia("(prefers-color-scheme:dark)").matches
+  ? "Dark Mode"
+  : "Light Mode";
+//default value of themeMode
+
+/********************************************************************* */
 window.addEventListener("load", () => {
   document.querySelector(".pre-loader").style.display = "none";
   setTheme();
   theme.addEventListener("click", setThemeMode);
 });
+/************************************************************************* */
 
 function setTheme() {
   const body = document.querySelector("body");
